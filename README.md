@@ -2,19 +2,18 @@
 
 ***
 
-- データベースの初期化
+- インフラ
 
 ```shell
 
-    `SQL/initDatabase.sqlをpostgres || mysqlに入れる`
+    composer install
 
-    cd bin
-
-    cake migrations migrate
-    
+    [Y,n] -> y
 
     `
-    app.default.php => app.php
+    gitTest/config/app.default.php
+
+    app.php 作成 -> app.default.php ソースをこぴぺ
 
     データベース接続設定、ユーザーとパスを設定
     
@@ -57,6 +56,18 @@
             'url' => env('DATABASE_URL', null),
         ],
     ],
+```
+
+- データベースの初期化
+
+```shell
+
+    `SQL/initDatabase.sqlをpostgres || mysqlに入れる`
+
+    cd bin
+
+    cake migrations migrate
+
 
     cake bake all items
 
