@@ -72,8 +72,9 @@
 
     cake migrations migrate
 
-
     cake bake all items
+
+    [n] -> a
 
 ```
 
@@ -96,8 +97,6 @@
 
 
 ```shell
-
-    cake bake all items
 
     cake server
 
