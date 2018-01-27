@@ -1,7 +1,11 @@
-- さんか
+```js
 
-### 修正したぜ！
-### 直でいじったぜ！
+const name = 'name'
+
+const price = 1000
+
+const int = 0.01
+```
 
 ***
 
