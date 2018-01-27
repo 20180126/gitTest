@@ -41,13 +41,14 @@ class ItemsController extends AppController
         $this->set('item', $item);
     }
 
+
     public function viewContent(){
 
         $items = $this->paginate($this->Items);
 
         $this->set(compact('items'));
     }
-
+    
     /**
      * Add method
      *
